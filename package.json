@@ -1,0 +1,43 @@
+{
+  "name": "prompt.md",
+  "version": "0.0.1",
+  "description": "The prompt-native web framework.",
+  "main": "src/prompt.js",
+  "scripts": {
+    "start": "node bin/prompt-md.js routes",
+    "build": "node bin/prompt-md.js build routes",
+    "deploy": "cf deploy"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "prompt.md": "bin/prompt-md.js"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "^1.1.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "routes"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "llm",
+    "markdown",
+    "server"
+  ],
+  "devDependencies": {
+    "cf": "^1.0.0-beta.12",
+    "wrangler": "^4.149.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewp/prompt-md.git"
+  },
+  "homepage": "https://prompt-md.matthewphillips.info"
+}
