@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node bin/prompt-md.js routes",
     "build": "node bin/prompt-md.js build routes",
-    "deploy": "cf deploy"
+    "deploy": "cf deploy",
+    "preview": "cf dev"
   },
   "license": "MIT",
   "type": "module",

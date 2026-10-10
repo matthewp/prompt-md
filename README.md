@@ -183,6 +183,8 @@ Static output is generated once, so every visitor sees the same version of each 
 npm run build && cf deploy
 ```
 
+To check the build first, `cf dev` serves `dist/` locally on the same runtime, at http://localhost:8787.
+
 This repository's own site is deployed this way. See `cloudflare.config.ts` and `wrangler.config.ts`.
 
 ## Using it as a library
