@@ -36,4 +36,4 @@ and a button to order a birthday cake.
 Warm and friendly. Lots of whitespace.
 ```
 
-Under the panels, one line: "That's the whole app. Run `npx prompt.md` and it's live."
+Under the panels, one line: "That's the whole app. Run `npx @matthewp/prompt.md` and it's live."

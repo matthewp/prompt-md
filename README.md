@@ -13,7 +13,7 @@ opening hours, and a button to order a birthday cake.
 ```
 
 ```sh
-npx prompt.md
+npx @matthewp/prompt.md
 ```
 
 That's the whole app.
@@ -42,7 +42,7 @@ mkdir routes
 echo "A landing page for a productivity app called Tempo." > routes/index.md
 
 export OPENROUTER_API_KEY=sk-or-...
-MODEL=openrouter/anthropic/claude-haiku-5.5 npx prompt.md
+MODEL=openrouter/anthropic/claude-haiku-5.5 npx @matthewp/prompt.md
 ```
 
 Open http://localhost:3000.
@@ -50,7 +50,7 @@ Open http://localhost:3000.
 To install it globally instead:
 
 ```sh
-npm install -g prompt.md
+npm install -g @matthewp/prompt.md
 prompt.md            # serves ./routes
 prompt.md site/      # serves ./site
 prompt.md build      # renders ./routes to ./dist
@@ -160,7 +160,7 @@ See the [pi-ai documentation](https://www.npmjs.com/package/@earendil-works/pi-a
 For sites that don't need per-request generation, prompt.md can render everything ahead of time and write plain files you can deploy to any static host.
 
 ```sh
-MODEL=openrouter/anthropic/claude-haiku-5.5 npx prompt.md build
+MODEL=openrouter/anthropic/claude-haiku-5.5 npx @matthewp/prompt.md build
 ```
 
 The build starts with every static route, then follows the links in each generated page. Dynamic routes are rendered for every value the site actually links to: if your homepage links to `/blog/launch-day`, `routes/blog/[slug].md` is rendered with `slug: "launch-day"`. Links to URLs with no route file are generated the same way the dev server generates them, so the static site has complete URL coverage too.
@@ -194,7 +194,7 @@ This repository's own site is deployed this way. See `cloudflare.config.ts` and 
 ```js
 import { createServer } from "node:http";
 import { builtinModels } from "@earendil-works/pi-ai/providers/all";
-import { createHandler } from "prompt.md";
+import { createHandler } from "@matthewp/prompt.md";
 
 const models = builtinModels();
 const model = models.getModel("anthropic", "claude-sonnet-5-5");

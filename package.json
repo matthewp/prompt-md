@@ -1,5 +1,5 @@
 {
-  "name": "prompt.md",
+  "name": "@matthewp/prompt.md",
   "version": "0.0.1",
   "description": "The prompt-native web framework.",
   "main": "src/prompt.js",
@@ -40,5 +40,8 @@
     "type": "git",
     "url": "git+https://github.com/matthewp/prompt-md.git"
   },
-  "homepage": "https://prompt-md.matthewphillips.info"
+  "homepage": "https://prompt-md.matthewphillips.info",
+  "publishConfig": {
+    "access": "public"
+  }
 }
